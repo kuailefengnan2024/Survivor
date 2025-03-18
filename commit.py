@@ -54,12 +54,6 @@ def main():
     status_output = run_command("git status")
     print(status_output)
     
-    # 提示用户确认
-    confirmation = input(f"\n{Fore.YELLOW}是否继续提交更改? (Y/N): ")
-    if confirmation.lower() != 'y':
-        print(f"{Fore.RED}操作已取消")
-        sys.exit(0)
-    
     # 添加所有更改
     print(f"\n{Fore.YELLOW}添加所有更改...")
     run_command("git add .")
