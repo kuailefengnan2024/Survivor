@@ -1,0 +1,319 @@
+Using pre-set license
+Built from '2022.1/staging' branch; Version is '2022.1.3f1 (1cedbfe38737) revision 1895871'; Using compiler version '192829333'; Build Type 'Release'
+OS: 'Windows 10  (10.0.19042) 64bit Professional' Language: 'en' Physical Memory: 32687 MB
+BatchMode: 1, IsHumanControllingUs: 0, StartBugReporterOnCrash: 0, Is64bit: 1, IsPro: 1
+
+COMMAND LINE ARGUMENTS:
+C:\Users\AMINE\Documents\unity project\licence\2022.1.3f1\Editor\Unity.exe
+-adb2
+-batchMode
+-noUpm
+-name
+AssetImportWorker0
+-projectPath
+C:/Users/AMINE/Documents/unity project/Survivor.IO
+-logFile
+Logs/AssetImportWorker0.log
+-srvPort
+56215
+Successfully changed project path to: C:/Users/AMINE/Documents/unity project/Survivor.IO
+C:/Users/AMINE/Documents/unity project/Survivor.IO
+[UnityMemory] Configuration Parameters - Can be set up in boot.config
+    "memorysetup-bucket-allocator-granularity=16"
+    "memorysetup-bucket-allocator-bucket-count=8"
+    "memorysetup-bucket-allocator-block-size=33554432"
+    "memorysetup-bucket-allocator-block-count=8"
+    "memorysetup-main-allocator-block-size=16777216"
+    "memorysetup-thread-allocator-block-size=16777216"
+    "memorysetup-gfx-main-allocator-block-size=16777216"
+    "memorysetup-gfx-thread-allocator-block-size=16777216"
+    "memorysetup-cache-allocator-block-size=4194304"
+    "memorysetup-typetree-allocator-block-size=2097152"
+    "memorysetup-profiler-bucket-allocator-granularity=16"
+    "memorysetup-profiler-bucket-allocator-bucket-count=8"
+    "memorysetup-profiler-bucket-allocator-block-size=33554432"
+    "memorysetup-profiler-bucket-allocator-block-count=8"
+    "memorysetup-profiler-allocator-block-size=16777216"
+    "memorysetup-profiler-editor-allocator-block-size=1048576"
+    "memorysetup-temp-allocator-size-main=16777216"
+    "memorysetup-job-temp-allocator-block-size=2097152"
+    "memorysetup-job-temp-allocator-block-size-background=1048576"
+    "memorysetup-job-temp-allocator-reduction-small-platforms=262144"
+    "memorysetup-temp-allocator-size-background-worker=32768"
+    "memorysetup-temp-allocator-size-job-worker=262144"
+    "memorysetup-temp-allocator-size-preload-manager=33554432"
+    "memorysetup-temp-allocator-size-nav-mesh-worker=65536"
+    "memorysetup-temp-allocator-size-audio-worker=65536"
+    "memorysetup-temp-allocator-size-cloud-worker=32768"
+    "memorysetup-temp-allocator-size-gi-baking-worker=262144"
+    "memorysetup-temp-allocator-size-gfx=262144"
+Refreshing native plugins compatible for Editor in 148.82 ms, found 6 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Initialize engine version: 2022.1.3f1 (1cedbfe38737)
+[Subsystems] Discovering subsystems at path C:/Users/AMINE/Documents/unity project/licence/2022.1.3f1/Editor/Data/Resources/UnitySubsystems
+[Subsystems] Discovering subsystems at path C:/Users/AMINE/Documents/unity project/Survivor.IO/Assets
+GfxDevice: creating device client; threaded=0; jobified=0
+Direct3D:
+    Version:  Direct3D 11.0 [level 11.1]
+    Renderer: NVIDIA GeForce RTX 2060 (ID=0x1f08)
+    Vendor:   NVIDIA
+    VRAM:     5968 MB
+    Driver:   31.0.15.2698
+Initialize mono
+Mono path[0] = 'C:/Users/AMINE/Documents/unity project/licence/2022.1.3f1/Editor/Data/Managed'
+Mono path[1] = 'C:/Users/AMINE/Documents/unity project/licence/2022.1.3f1/Editor/Data/MonoBleedingEdge/lib/mono/unityjit-win32'
+Mono config path = 'C:/Users/AMINE/Documents/unity project/licence/2022.1.3f1/Editor/Data/MonoBleedingEdge/etc'
+Using monoOptions --debugger-agent=transport=dt_socket,embedding=1,server=y,suspend=n,address=127.0.0.1:56592
+Begin MonoManager ReloadAssembly
+Registering precompiled unity dll's ...
+Register platform support module: C:/Users/AMINE/Documents/unity project/licence/2022.1.3f1/Editor/Data/PlaybackEngines/AndroidPlayer/UnityEditor.Android.Extensions.dll
+Register platform support module: C:/Users/AMINE/Documents/unity project/licence/2022.1.3f1/Editor/Data/PlaybackEngines/WindowsStandaloneSupport/UnityEditor.WindowsStandalone.Extensions.dll
+Registered in 0.007311 seconds.
+Native extension for WindowsStandalone target not found
+Native extension for Android target not found
+Refreshing native plugins compatible for Editor in 127.88 ms, found 6 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Mono: successfully reloaded assembly
+- Completed reload, in  0.663 seconds
+Domain Reload Profiling:
+	ReloadAssembly (663ms)
+		BeginReloadAssembly (67ms)
+			ExecutionOrderSort (0ms)
+			DisableScriptedObjects (0ms)
+			BackupInstance (0ms)
+			ReleaseScriptingObjects (0ms)
+			CreateAndSetChildDomain (1ms)
+		EndReloadAssembly (499ms)
+			LoadAssemblies (65ms)
+			RebuildTransferFunctionScriptingTraits (0ms)
+			SetupTypeCache (105ms)
+				TypeCache.Initialize (104ms)
+					TypeCache.ScanAssembly (103ms)
+				ResolveRequiredComponents (0ms)
+			ReleaseScriptCaches (0ms)
+			RebuildScriptCaches (25ms)
+			SetupLoadedEditorAssemblies (319ms)
+				LogAssemblyErrors (0ms)
+				InitializePlatformSupportModulesInManaged (48ms)
+				SetLoadedEditorAssemblies (7ms)
+				RefreshPlugins (128ms)
+				BeforeProcessingInitializeOnLoad (1ms)
+				ProcessInitializeOnLoadAttributes (97ms)
+				ProcessInitializeOnLoadMethodAttributes (38ms)
+				AfterProcessingInitializeOnLoad (0ms)
+				EditorAssembliesLoaded (0ms)
+			ExecutionOrderSort2 (0ms)
+			AwakeInstancesAfterBackupRestoration (0ms)
+Platform modules already initialized, skipping
+Registering precompiled user dll's ...
+Registered in 0.010223 seconds.
+Begin MonoManager ReloadAssembly
+Symbol file LoadedFromMemory doesn't match image C:\Users\AMINE\Documents\unity project\Survivor.IO\Library\PackageCache\com.unity.visualscripting@1.7.8\Editor\VisualScripting.Core\Dependencies\DotNetZip\Unity.VisualScripting.IonicZip.dll
+Symbol file LoadedFromMemory doesn't match image C:\Users\AMINE\Documents\unity project\Survivor.IO\Library\PackageCache\com.unity.visualscripting@1.7.8\Editor\VisualScripting.Core\Dependencies\YamlDotNet\Unity.VisualScripting.YamlDotNet.dll
+Native extension for WindowsStandalone target not found
+Native extension for Android target not found
+Refreshing native plugins compatible for Editor in 128.96 ms, found 6 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Package Manager log level set to [2]
+[Package Manager] Server::EnsureServerProcessIsRunning -- launch failed, reason: Unity was launched with the -noUpm command-line argument
+[Package Manager] UpmClient::Send -- Unable to send message (not connected to UPM process).
+[Package Manager] Cannot connect to Unity Package Manager local server
+Mono: successfully reloaded assembly
+- Completed reload, in  1.522 seconds
+Domain Reload Profiling:
+	ReloadAssembly (1522ms)
+		BeginReloadAssembly (212ms)
+			ExecutionOrderSort (0ms)
+			DisableScriptedObjects (5ms)
+			BackupInstance (0ms)
+			ReleaseScriptingObjects (0ms)
+			CreateAndSetChildDomain (125ms)
+		EndReloadAssembly (1201ms)
+			LoadAssemblies (90ms)
+			RebuildTransferFunctionScriptingTraits (0ms)
+			SetupTypeCache (267ms)
+				TypeCache.Initialize (256ms)
+					TypeCache.ScanAssembly (252ms)
+				ResolveRequiredComponents (11ms)
+			ReleaseScriptCaches (1ms)
+			RebuildScriptCaches (71ms)
+			SetupLoadedEditorAssemblies (721ms)
+				LogAssemblyErrors (0ms)
+				InitializePlatformSupportModulesInManaged (12ms)
+				SetLoadedEditorAssemblies (7ms)
+				RefreshPlugins (129ms)
+				BeforeProcessingInitializeOnLoad (124ms)
+				ProcessInitializeOnLoadAttributes (276ms)
+				ProcessInitializeOnLoadMethodAttributes (167ms)
+				AfterProcessingInitializeOnLoad (7ms)
+				EditorAssembliesLoaded (0ms)
+			ExecutionOrderSort2 (0ms)
+			AwakeInstancesAfterBackupRestoration (5ms)
+Platform modules already initialized, skipping
+========================================================================
+Worker process is ready to serve import requests
+Launched and connected shader compiler UnityShaderCompiler.exe after 0.03 seconds
+Refreshing native plugins compatible for Editor in 1.41 ms, found 6 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Unloading 6508 Unused Serialized files (Serialized files now loaded: 0)
+Unloading 131 unused Assets / (388.9 KB). Loaded Objects now: 6893.
+Memory consumption went from 1.00 GB to 1.00 GB.
+Total: 6.481300 ms (FindLiveObjects: 0.537200 ms CreateObjectMapping: 0.584300 ms MarkObjects: 5.189800 ms  DeleteObjects: 0.168800 ms)
+
+AssetImportParameters requested are different than current active one (requested -> active):
+  custom:video-decoder-ogg-theora: a1e56fd34408186e4bbccfd4996cb3dc -> 
+  custom:container-muxer-webm: aa71ff27fc2769a1b78a27578f13a17b -> 
+  custom:container-demuxer-webm: 4f35f7cbe854078d1ac9338744f61a02 -> 
+  custom:video-encoder-webm-vp8: eb34c28f22e8b96e1ab97ce403110664 -> 
+  custom:audio-encoder-webm-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
+  custom:framework-win-MediaFoundation: 216162199b28c13a410421893ffa2e32 -> 
+  custom:container-demuxer-ogg: 62fdf1f143b41e24485cea50d1cbac27 -> 
+  custom:video-decoder-webm-vp8: 9c59270c3fd7afecdb556c50c9e8de78 -> 
+  custom:audio-decoder-ogg-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
+========================================================================
+Received Import Request.
+  Time since last request: 9037.214868 seconds.
+  path: Assets/Perfabes/Levels/Leve3.prefab
+  artifactKey: Guid(c95c42a60d531694f9ea70624eadd4a8) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Perfabes/Levels/Leve3.prefab using Guid(c95c42a60d531694f9ea70624eadd4a8) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'abf272ed6510c67a5418e8c3ec84fef2') in 0.319088 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000025 seconds.
+  path: Assets/Perfabes/Levels/Leve5.prefab
+  artifactKey: Guid(b88e6cb53850efb489a00ef7e9491e5b) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Perfabes/Levels/Leve5.prefab using Guid(b88e6cb53850efb489a00ef7e9491e5b) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '30946477fa4850f346e25dc4b313c64a') in 0.117024 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000029 seconds.
+  path: Assets/Perfabes/Levels/Leve1.prefab
+  artifactKey: Guid(12f9ecb3a061b5d4492fd682e94f1f34) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Perfabes/Levels/Leve1.prefab using Guid(12f9ecb3a061b5d4492fd682e94f1f34) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '2f5f0b06898d29b587169fd6d9de0edb') in 0.113847 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000024 seconds.
+  path: Assets/Perfabes/Levels/Leve2.prefab
+  artifactKey: Guid(aa97ba3ad55eb204eb2561a5a466d750) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Perfabes/Levels/Leve2.prefab using Guid(aa97ba3ad55eb204eb2561a5a466d750) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '246969b8284f1f6eee6b88f0a9f9dc47') in 0.106385 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000023 seconds.
+  path: Assets/Lighting Settings/UniversalRenderPipelineGlobalSettings.asset
+  artifactKey: Guid(74d138e8e1b57cf47be3b28fbf485ba6) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Lighting Settings/UniversalRenderPipelineGlobalSettings.asset using Guid(74d138e8e1b57cf47be3b28fbf485ba6) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'b786b9482e9a6b0d4d2d43c2ce8e9808') in 0.004729 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000028 seconds.
+  path: Assets/Perfabes/Levels/Leve4.prefab
+  artifactKey: Guid(9923592712eb3a449a79aefc36e1e59c) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Perfabes/Levels/Leve4.prefab using Guid(9923592712eb3a449a79aefc36e1e59c) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'd9f17404de2898ab3a20acc6db0ab71b') in 0.115086 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.000024 seconds.
+  path: Assets/Perfabes/Levels/Leve6.prefab
+  artifactKey: Guid(66b3cae0033c33542bb67aa02671df67) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Perfabes/Levels/Leve6.prefab using Guid(66b3cae0033c33542bb67aa02671df67) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'f70b555eb313c7d8d0b3ec75ca55bcc8') in 0.165421 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 3.033000 seconds.
+  path: Assets/Animation/dog/dog 1.prefab
+  artifactKey: Guid(9b3190019c2874b4193c6649fe9c4b9b) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Animation/dog/dog 1.prefab using Guid(9b3190019c2874b4193c6649fe9c4b9b) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '4faf1c0aa61a657e0e34f15f5ec8aa5d') in 0.101879 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 6.827359 seconds.
+  path: Assets/Animation/dog 1/zombie 3.prefab
+  artifactKey: Guid(82b2f0b6f5e2ed041a1e49e2dffbb52f) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Animation/dog 1/zombie 3.prefab using Guid(82b2f0b6f5e2ed041a1e49e2dffbb52f) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '4fc48c983f052728fec8fc5605f1765e') in 0.075053 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.221886 seconds.
+  path: Assets/Animation/dog 2/zombie 4.prefab
+  artifactKey: Guid(6de3ec13b7093e045b5c0f7c37457838) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Animation/dog 2/zombie 4.prefab using Guid(6de3ec13b7093e045b5c0f7c37457838) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '5af3a7424b3a0cc8706d0035c6aeea20') in 0.070675 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.299208 seconds.
+  path: Assets/Animation/dog 3/zombie 5.prefab
+  artifactKey: Guid(f6b274e0f3bb89d46b7ab003136888a9) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Animation/dog 3/zombie 5.prefab using Guid(f6b274e0f3bb89d46b7ab003136888a9) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '82849030e337f276656f314a08a89a24') in 0.068800 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.576695 seconds.
+  path: Assets/Animation/dog 4/zombie 5.prefab
+  artifactKey: Guid(ee483b13f0559c44a96b7ddddb914ce4) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Animation/dog 4/zombie 5.prefab using Guid(ee483b13f0559c44a96b7ddddb914ce4) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '9bc1c8c0cedccd97afc8da0c84295837') in 0.068742 seconds 
+========================================================================
+Received Import Request.
+  Time since last request: 0.238244 seconds.
+  path: Assets/Animation/dog 5/zombie 6.prefab
+  artifactKey: Guid(2613ef3d537e83848bd77b7196b97359) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Animation/dog 5/zombie 6.prefab using Guid(2613ef3d537e83848bd77b7196b97359) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'b89cb9805eb96e9e24dc381fc51d99a6') in 0.068341 seconds 
+========================================================================
+Received Prepare
+Registering precompiled user dll's ...
+Registered in 0.008965 seconds.
+Begin MonoManager ReloadAssembly
+Symbol file LoadedFromMemory doesn't match image C:\Users\AMINE\Documents\unity project\Survivor.IO\Library\PackageCache\com.unity.visualscripting@1.7.8\Editor\VisualScripting.Core\Dependencies\DotNetZip\Unity.VisualScripting.IonicZip.dll
+Symbol file LoadedFromMemory doesn't match image C:\Users\AMINE\Documents\unity project\Survivor.IO\Library\PackageCache\com.unity.visualscripting@1.7.8\Editor\VisualScripting.Core\Dependencies\YamlDotNet\Unity.VisualScripting.YamlDotNet.dll
+Native extension for WindowsStandalone target not found
+Native extension for Android target not found
+Refreshing native plugins compatible for Editor in 1.62 ms, found 6 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+[Package Manager] Server::EnsureServerProcessIsRunning -- launch failed, reason: Unity was launched with the -noUpm command-line argument
+[Package Manager] UpmClient::Send -- Unable to send message (not connected to UPM process).
+[Package Manager] Cannot connect to Unity Package Manager local server
+Mono: successfully reloaded assembly
+- Completed reload, in  1.286 seconds
+Domain Reload Profiling:
+	ReloadAssembly (1287ms)
+		BeginReloadAssembly (147ms)
+			ExecutionOrderSort (0ms)
+			DisableScriptedObjects (8ms)
+			BackupInstance (0ms)
+			ReleaseScriptingObjects (0ms)
+			CreateAndSetChildDomain (48ms)
+		EndReloadAssembly (1037ms)
+			LoadAssemblies (84ms)
+			RebuildTransferFunctionScriptingTraits (0ms)
+			SetupTypeCache (259ms)
+				TypeCache.Initialize (248ms)
+					TypeCache.ScanAssembly (243ms)
+				ResolveRequiredComponents (11ms)
+			ReleaseScriptCaches (2ms)
+			RebuildScriptCaches (53ms)
+			SetupLoadedEditorAssemblies (561ms)
+				LogAssemblyErrors (0ms)
+				InitializePlatformSupportModulesInManaged (19ms)
+				SetLoadedEditorAssemblies (6ms)
+				RefreshPlugins (2ms)
+				BeforeProcessingInitializeOnLoad (101ms)
+				ProcessInitializeOnLoadAttributes (254ms)
+				ProcessInitializeOnLoadMethodAttributes (172ms)
+				AfterProcessingInitializeOnLoad (7ms)
+				EditorAssembliesLoaded (0ms)
+			ExecutionOrderSort2 (0ms)
+			AwakeInstancesAfterBackupRestoration (11ms)
+Platform modules already initialized, skipping
+Refreshing native plugins compatible for Editor in 8.54 ms, found 6 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Unloading 6346 Unused Serialized files (Serialized files now loaded: 0)
+Unloading 118 unused Assets / (352.2 KB). Loaded Objects now: 6947.
+Memory consumption went from 0.98 GB to 0.98 GB.
+Total: 6.453000 ms (FindLiveObjects: 0.429600 ms CreateObjectMapping: 0.462500 ms MarkObjects: 5.464200 ms  DeleteObjects: 0.094700 ms)
+
+AssetImportParameters requested are different than current active one (requested -> active):
+  custom:video-decoder-ogg-theora: a1e56fd34408186e4bbccfd4996cb3dc -> 
+  custom:container-muxer-webm: aa71ff27fc2769a1b78a27578f13a17b -> 
+  custom:container-demuxer-webm: 4f35f7cbe854078d1ac9338744f61a02 -> 
+  custom:video-encoder-webm-vp8: eb34c28f22e8b96e1ab97ce403110664 -> 
+  custom:audio-encoder-webm-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
+  custom:framework-win-MediaFoundation: 216162199b28c13a410421893ffa2e32 -> 
+  custom:container-demuxer-ogg: 62fdf1f143b41e24485cea50d1cbac27 -> 
+  custom:video-decoder-webm-vp8: 9c59270c3fd7afecdb556c50c9e8de78 -> 
+  custom:audio-decoder-ogg-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
+========================================================================
+Received Import Request.
+  Time since last request: 1469.732885 seconds.
+  path: Assets/Animation/dog/Death.anim
+  artifactKey: Guid(1a97190f8d5190142936b181bc374bba) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Animation/dog/Death.anim using Guid(1a97190f8d5190142936b181bc374bba) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '2070d5c06293fe57688633f73c74d972') in 0.027339 seconds 
