@@ -15,11 +15,20 @@ from colorama import Fore, Style, init
 # 初始化colorama
 init(autoreset=True)
 
+# 设置环境变量以使用UTF-8编码
+os.environ["PYTHONIOENCODING"] = "utf-8"
+
 def run_command(command):
     """运行命令并返回结果"""
     try:
+        # 设置环境变量使用UTF-8编码
+        my_env = os.environ.copy()
+        my_env["LANG"] = "en_US.UTF-8"
+        
         result = subprocess.run(command, shell=True, check=True, text=True, 
-                              stdout=subprocess.PIPE, stderr=subprocess.PIPE)
+                              stdout=subprocess.PIPE, stderr=subprocess.PIPE,
+                              encoding='utf-8', errors='replace',
+                              env=my_env)
         return result.stdout
     except subprocess.CalledProcessError as e:
         print(f"{Fore.RED}命令执行失败: {e}")
@@ -71,8 +80,12 @@ def main():
     
     # 显示最近的提交记录
     print(f"\n{Fore.YELLOW}最近的提交记录:")
-    log_output = run_command('git log -3 --pretty=format:"%h - %an, %ar : %s"')
-    print(log_output)
+    try:
+        log_output = run_command('git log -3 --pretty=format:"%h - %an, %ar : %s"')
+        print(log_output)
+    except Exception as e:
+        print(f"{Fore.RED}无法显示提交记录: {e}")
+        print(f"{Fore.YELLOW}但提交和推送操作已完成。")
 
 if __name__ == "__main__":
     main() 
