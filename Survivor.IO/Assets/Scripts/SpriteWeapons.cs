@@ -1,17 +1,10 @@
-
 /*
-
-
-
-
-
-
-
-
-
-
-
-*/
+ * SpriteWeapons.cs
+ * 武器精灵管理器类
+ * 这个类负责管理游戏中所有武器的视觉和功能表现
+ * 包括武器GameObject、图标、名称和描述文本的管理
+ * 以及武器激活/停用控制
+ */
 
 using System.Collections;
 using System.Collections.Generic;
@@ -20,76 +13,76 @@ using UnityEngine;
 
 public class SpriteWeapons : MonoBehaviour
 {
-   public  ManagerWeapons managerWeapons;
+   public ManagerWeapons managerWeapons; // 武器管理器引用
     [Header("Weapons Container")]
-    public GameObject ProtecteurGreen;
-    public GameObject DroneA;
-    public GameObject DroneB;
-    public GameObject DroneC;
-    public GameObject BrikWall;
-    public GameObject Gun;
-    public GameObject SprineA;
-    public GameObject SprineB;
-    public GameObject Ball;
-    public GameObject SalsaRanshom;
-    public GameObject FireGase;
-    public GameObject Aguel;
+    public GameObject ProtecteurGreen; // 绿色保护装置武器对象
+    public GameObject DroneA; // A型无人机武器对象
+    public GameObject DroneB; // B型无人机武器对象
+    public GameObject DroneC; // C型无人机武器对象
+    public GameObject BrikWall; // 砖墙武器对象
+    public GameObject Gun; // 枪械武器对象
+    public GameObject SprineA; // A型旋转武器对象
+    public GameObject SprineB; // B型旋转武器对象
+    public GameObject Ball; // 球类武器对象
+    public GameObject SalsaRanshom; // 火焰杯武器对象
+    public GameObject FireGase; // 火焰气体武器对象
+    public GameObject Aguel; // 针类武器对象
 
     [Header("Controller GameObjects")]
-    public GameObject DroneContainer;
-    public GameObject DroneObjectsContainer;
-    public GameObject SprineContainer;
+    public GameObject DroneContainer; // 无人机容器对象
+    public GameObject DroneObjectsContainer; // 无人机对象容器
+    public GameObject SprineContainer; // 旋转武器容器对象
 
     [Header("Drones Objects")]
-    public GameObject DroneObjectA;
-    public GameObject DroneObjectB;
-    public GameObject DroneObjectC;
+    public GameObject DroneObjectA; // A型无人机具体对象
+    public GameObject DroneObjectB; // B型无人机具体对象
+    public GameObject DroneObjectC; // C型无人机具体对象
 
     [Header("WeaponsIcons")]
-    public Sprite SProtecteurGreen;
-    public Sprite SDroneA;
-    public Sprite SDroneB;
-    public Sprite SDroneC;
-    public Sprite SBrikWall;
-    public Sprite SGun;
-    public Sprite SSprineA;
-    public Sprite SSprineB;
-    public Sprite SBall;
-    public Sprite SSalsaRanshone;
-    public Sprite SFireGase;
-    public Sprite SAguel;
+    public Sprite SProtecteurGreen; // 绿色保护装置图标
+    public Sprite SDroneA; // A型无人机图标
+    public Sprite SDroneB; // B型无人机图标
+    public Sprite SDroneC; // C型无人机图标
+    public Sprite SBrikWall; // 砖墙武器图标
+    public Sprite SGun; // 枪械武器图标
+    public Sprite SSprineA; // A型旋转武器图标
+    public Sprite SSprineB; // B型旋转武器图标
+    public Sprite SBall; // 球类武器图标
+    public Sprite SSalsaRanshone; // 火焰杯武器图标
+    public Sprite SFireGase; // 火焰气体武器图标
+    public Sprite SAguel; // 针类武器图标
 
     [Header("NamesWeapons")]
-    internal string NProtecteurGreen;
-    internal string NDroneA;
-    internal string NDroneB;
-    internal string NDroneC;
-    internal string NBrikeWall;
-    internal string NGun;
-    internal string NSprineA;
-    internal string NSprineB;
-    internal string NBall;
-    internal string NSalsaRanshon;
-    internal string NFireGase;
-    internal string Naguel;
+    internal string NProtecteurGreen; // 绿色保护装置名称
+    internal string NDroneA; // A型无人机名称
+    internal string NDroneB; // B型无人机名称
+    internal string NDroneC; // C型无人机名称
+    internal string NBrikeWall; // 砖墙武器名称
+    internal string NGun; // 枪械武器名称
+    internal string NSprineA; // A型旋转武器名称
+    internal string NSprineB; // B型旋转武器名称
+    internal string NBall; // 球类武器名称
+    internal string NSalsaRanshon; // 火焰杯武器名称
+    internal string NFireGase; // 火焰气体武器名称
+    internal string Naguel; // 针类武器名称
 
     [Header("DescritionWeapons")]
-    internal string DProtecteurGreen;
-    internal string DDroneA;
-    internal string DDroneB;
-    internal string DDroneC;
-    internal string DBrikWall;
-    internal string DGun;
-    internal string DSprineA;
-    internal string DSprineB;
-    internal string DBall;
-    internal string DSalsaRanshon;
-    internal string DFireGase;
-    internal string DAguel;
+    internal string DProtecteurGreen; // 绿色保护装置描述
+    internal string DDroneA; // A型无人机描述
+    internal string DDroneB; // B型无人机描述
+    internal string DDroneC; // C型无人机描述
+    internal string DBrikWall; // 砖墙武器描述
+    internal string DGun; // 枪械武器描述
+    internal string DSprineA; // A型旋转武器描述
+    internal string DSprineB; // B型旋转武器描述
+    internal string DBall; // 球类武器描述
+    internal string DSalsaRanshon; // 火焰杯武器描述
+    internal string DFireGase; // 火焰气体武器描述
+    internal string DAguel; // 针类武器描述
 
     void Start()
     {
-        ManagerTexting();
+        ManagerTexting(); // 初始化所有武器的文本描述
     }
     void Update()
     {

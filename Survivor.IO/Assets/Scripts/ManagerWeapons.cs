@@ -1,17 +1,9 @@
-
 /*
-
-
-
-
-
-
-
-
-
-
-
-*/
+ * ManagerWeapons.cs
+ * 武器管理器类
+ * 这个类负责管理游戏中的武器系统，包括武器选择、升级选项的显示和武器技能的激活
+ * 它处理游戏中武器相关的UI界面和武器选择逻辑
+ */
 
 using System.Collections;
 using System.Collections.Generic;
@@ -21,63 +13,63 @@ using TMPro;
 
 public class ManagerWeapons : MonoBehaviour
 {
-    Sprite mysprite;
+    Sprite mysprite; // 临时存储精灵图像
     [Header("Managers")]
-    public SpriteWeapons WeaponsManager;
-    public GameManager FillingScore;
+    public SpriteWeapons WeaponsManager; // 武器精灵管理器引用
+    public GameManager FillingScore; // 游戏管理器引用，用于获取得分等信息
 
     [Header("Manager Componenet Addons")]
-    public GameObject GameAddonsWeapons;
+    public GameObject GameAddonsWeapons; // 武器附加组件的容器
 
     [Header("Buttons GamePlay")]
-    public GameObject FirstBtn;
-    public GameObject SecondBtn;
-    public GameObject ThirdBtn;
+    public GameObject FirstBtn; // 第一个武器选择按钮
+    public GameObject SecondBtn; // 第二个武器选择按钮
+    public GameObject ThirdBtn; // 第三个武器选择按钮
 
     [Header("Names")]
-    public Text NameOne;
-    public Text NameTwo;
-    public Text NameThree;
+    public Text NameOne; // 第一个武器名称文本
+    public Text NameTwo; // 第二个武器名称文本
+    public Text NameThree; // 第三个武器名称文本
 
     [Header("Images")]
-    public Image IconOne;
-    public Image IconTwo;
-    public Image IconThree;
+    public Image IconOne; // 第一个武器图标
+    public Image IconTwo; // 第二个武器图标
+    public Image IconThree; // 第三个武器图标
 
     [Header("Description")]
-    public TextMeshProUGUI DescriptionOne;
-    public TextMeshProUGUI DescriptionTwo;
-    public TextMeshProUGUI DescriptionThree;
+    public TextMeshProUGUI DescriptionOne; // 第一个武器描述文本
+    public TextMeshProUGUI DescriptionTwo; // 第二个武器描述文本
+    public TextMeshProUGUI DescriptionThree; // 第三个武器描述文本
 
     [Header("ShootYollow")]
-    public GameObject YSpriteOne;
-    public GameObject YSpriteTwo;
-    public GameObject YSpriteThree;
-    public GameObject YSpriteFour;
-    public GameObject YSpriteFive;
-    public GameObject YSpriteSix;
+    public GameObject YSpriteOne; // 黄色射击精灵1
+    public GameObject YSpriteTwo; // 黄色射击精灵2
+    public GameObject YSpriteThree; // 黄色射击精灵3
+    public GameObject YSpriteFour; // 黄色射击精灵4
+    public GameObject YSpriteFive; // 黄色射击精灵5
+    public GameObject YSpriteSix; // 黄色射击精灵6
 
     [Header("ShootGreen")]
-    public GameObject GSpriteOne;
-    public GameObject GSpriteTwo;
-    public GameObject GSpriteThree;
-    public GameObject GSpriteFour;
-    public GameObject GSpriteFive;
-    public GameObject GSpriteSix;
+    public GameObject GSpriteOne; // 绿色射击精灵1
+    public GameObject GSpriteTwo; // 绿色射击精灵2
+    public GameObject GSpriteThree; // 绿色射击精灵3
+    public GameObject GSpriteFour; // 绿色射击精灵4
+    public GameObject GSpriteFive; // 绿色射击精灵5
+    public GameObject GSpriteSix; // 绿色射击精灵6
 
     [Header("Int Managers")]
-    public int PauseFirst;
-    public int PauseSecond;
-    public int PauseThrees;
-    public int[] rrpause;
+    public int PauseFirst; // 第一个武器选择的随机索引
+    public int PauseSecond; // 第二个武器选择的随机索引
+    public int PauseThrees; // 第三个武器选择的随机索引
+    public int[] rrpause; // 暂停数组，可能用于存储已选武器索引
     [Header("WeaponSkills")]
-    public int[] Weaponselected;
+    public int[] Weaponselected; // 已选择的武器技能数组
 
-    public GameObject [] weaponSkillsOBJ;
-    public Image[] weaponSkillsImage;
+    public GameObject [] weaponSkillsOBJ; // 武器技能对象数组
+    public Image[] weaponSkillsImage; // 武器技能图像数组
 
     [Header("Boolean Manager")]
-    internal bool ActivateWeapon = true;
+    internal bool ActivateWeapon = true; // 武器激活标志
 
     void Start()
     {
