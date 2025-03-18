@@ -5,18 +5,18 @@
  * 它协调其他管理器类之间的交互，并处理游戏进程中的主要逻辑
  */
 
-using System.Collections;
-using System.Collections.Generic;
-using UnityEngine.UI;
-using UnityEngine;
-using TMPro;
-using System.Threading;
-using Unity.VisualScripting;
-using static UnityEngine.GraphicsBuffer;
-using Unity.VisualScripting.Antlr3.Runtime.Collections;
-using System.Numerics;
+using System.Collections; // 用于管理协程
+using System.Collections.Generic; // 用于管理列表
+using UnityEngine.UI; // 用于管理UI元素
+using UnityEngine; // 用于管理游戏对象
+using TMPro; // 用于管理文本
+using System.Threading; // 用于管理线程
+using Unity.VisualScripting; // 用于管理可视化脚本
+using static UnityEngine.GraphicsBuffer; // 用于管理图形缓冲区
+using Unity.VisualScripting.Antlr3.Runtime.Collections; // 用于管理集合
+using System.Numerics; // 用于管理数值
 
-public class GameManager : MonoBehaviour
+public class GameManager : MonoBehaviour // 游戏管理器类，继承自MonoBehaviour
 {
     LevelManager levelManager; // 关卡管理器引用
     [Header("Manager Controller")]
@@ -93,7 +93,7 @@ public class GameManager : MonoBehaviour
     internal bool Checkenemys = false; // 检查敌人标志
     public float hh; // 额外生命值变量
 
-    void Start()
+    void Start() // 游戏开始时执行
     {
         // 初始化时查找关卡管理器
         levelManager = FindObjectOfType<LevelManager>();
@@ -109,7 +109,7 @@ public class GameManager : MonoBehaviour
         ManagerDownBtn.Death = true;
     }
 
-    void Update()
+    void Update() // 游戏更新时执行
     {
         // 检查敌人标志处理（当前为空）
         if(Checkenemys == true)
@@ -234,7 +234,7 @@ public class GameManager : MonoBehaviour
     }
 
     // 暂停按钮方法
-    public void BtnPause()
+    public void BtnPause() // 暂停按钮方法
     {
         AvailabelWeapon = false; // 禁用武器
         Times.StopTime(); // 停止计时
@@ -285,7 +285,7 @@ public class GameManager : MonoBehaviour
     }
 
     // 更新击杀和金币显示
-    void CheckKilledAndCoins()
+    void CheckKilledAndCoins() // 检查击杀和金币显示
     {
         // 更新UI显示
         ValueKilled.text =  "" + CurrentKilled;
@@ -310,14 +310,14 @@ public class GameManager : MonoBehaviour
         managerMecanique.InitText();
 
     }
-    void CheckValeurFill()
+    void CheckValeurFill() // 检查填充值
     {
         if (CheckFinish == true)
         {
             ScoringLevel.fillAmount = ValureLevel / (100 +CurrentReload*50);
         }
     }
-    void ReloadingWapeons()
+    void ReloadingWapeons() // 武器重装
     {    
         Valeur += 1f * Time.deltaTime;
         if(ReloadWeapon.fillAmount < 1 && RightFill == true)
@@ -351,7 +351,7 @@ public class GameManager : MonoBehaviour
         }
     }
     
-    public void FirstCont()
+    public void FirstCont() // 第一关
     {
         ScreenAddonWap.SetActive(false);
         Times.StartTime();
@@ -387,7 +387,7 @@ public class GameManager : MonoBehaviour
         ScoringLevel.fillAmount = 0;
         StartCoroutine(CheckingFinishBtn());
     }
-    public void ThirdCont()
+    public void ThirdCont() // 第三关
     {
         ScreenAddonWap.SetActive(false);
         Times.StartTime();
